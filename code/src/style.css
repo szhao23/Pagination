@@ -35,6 +35,12 @@ body,
   border: none;
 }
 
+/* CSS Styling for disabled actions, pointer-events helps make it so the disabled events do not have hover animation */
+.button:disabled {
+  color: #b3b3b3;
+  pointer-events: none;
+}
+
 .button,
 .link {
   height: 45px;
@@ -58,6 +64,11 @@ body,
 /* Link/Page Number Hover Animation */
 .button:hover,
 .link:hover {
+  color: #fff;
+  background: #4070f4;
+}
+/* Link/Page Number Active Class */
+.link.active {
   color: #fff;
   background: #4070f4;
 }
